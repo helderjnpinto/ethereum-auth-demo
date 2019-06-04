@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start:frontend": "node backend.js",
+    "start:jwt-header": "node backend-jwt-header.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,7 +13,7 @@
   "dependencies": {
     "express": "^4.15.2",
     "jquery": "^3.2.1",
-    "web3-auth": "^1.3.0",
-    "web3": "^1.0.0-beta.55"
+    "web3": "^1.0.0-beta.55",
+    "web3-auth": "git+https://github.com/helderjnpinto/web3-auth.git#feature/server-side-json"
   }
 }

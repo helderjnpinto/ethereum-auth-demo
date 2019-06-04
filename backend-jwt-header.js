@@ -2,14 +2,14 @@
 
 var express = require('express');
 var app = express();
-var web3Auth = require('web3-auth');
+var web3Auth = require('web3-auth/server-side.js');
 
 app.use(express.static('public'));
 
 web3Auth.attach(app, "This is my secret.");
 
 app.get('/who', function (req, res) {
-  console.log(req.cookies.token);
+  console.log(req.headers.authorization);
   console.log(req.user);
   if (req.user) {
     res.json({

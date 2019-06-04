@@ -17,3 +17,16 @@ Demo of signing into a backend website from Web3 using JSON Web Tokens.
 * The account address and the signed message are POSTed to the backend.
 * The backend verifies that the signature is correct and generates a signed Json Web Token (JWT) proving that the holder is in control of the address.
 * The JWT is sent back to the web browser as a HttpOnly (not accessible from frontend JS) session cookie.
+
+
+# Testing express server jwt and client
+
+## run docker compose
+
+> docker-compose up
+
+## Client 
+
+> cd ./client
+> npm i 
+> node index.js 
